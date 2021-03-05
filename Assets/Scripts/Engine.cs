@@ -12,7 +12,6 @@ public class Engine : MonoBehaviour
         Rowena.first_name = "Rowena";
         Rowena.last_name = "Rowena";
         Debug.Log(Rowena.first_name);
-
     }
 
     // Update is called once per frame
