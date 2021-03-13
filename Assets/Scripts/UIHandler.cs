@@ -7,14 +7,14 @@ using TMPro;
 public class UIHandler : MonoBehaviour
 {
     public TextMeshProUGUI turnCounter;
+    public int turns = 4;
 
     void Start()
     {
-
     }
 
     void Update()
     {
-        this.turnCounter.text = "hello world";
+        this.turnCounter.text = turns.ToString();
     }
 }
