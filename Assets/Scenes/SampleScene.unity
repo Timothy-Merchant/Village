@@ -160,8 +160,9 @@ GameObject:
   m_Component:
   - component: {fileID: 106007817}
   - component: {fileID: 106007818}
+  - component: {fileID: 106007819}
   m_Layer: 0
-  m_Name: PersonPrefab (3)
+  m_Name: TestPlayer4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -197,6 +198,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {fileID: 1995932939}
+  isActive: 0
+  uIHandler: {fileID: 0}
+  playerLogic: {fileID: 0}
+--- !u!114 &106007819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106007816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f095142005b6ca4e83b2c25699a5407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  movesRemaining: 0
+  didMove: 0
+  isActive: 0
 --- !u!1 &434115473
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,8 +227,9 @@ GameObject:
   m_Component:
   - component: {fileID: 434115474}
   - component: {fileID: 434115475}
+  - component: {fileID: 434115476}
   m_Layer: 0
-  m_Name: PersonPrefab
+  m_Name: TestPlayer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244,6 +265,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {fileID: 47359172}
+  isActive: 0
+  uIHandler: {fileID: 0}
+  playerLogic: {fileID: 0}
+--- !u!114 &434115476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434115473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f095142005b6ca4e83b2c25699a5407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  movesRemaining: 0
+  didMove: 0
+  isActive: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327a4b62242ac1845b9671d5fe1156ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  engine: {fileID: 845406946}
   turnCounter: {fileID: 2101078759}
 --- !u!114 &798667078
 MonoBehaviour:
@@ -725,6 +766,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de338cd6b01e9dd4a915f96c1f53e8e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uIHandler: {fileID: 798667077}
+  players: []
+  testPlayer1: {fileID: 434115473}
+  testPlayer1Logic: {fileID: 434115476}
+  testPlayer2: {fileID: 1937783730}
+  testPlayer3: {fileID: 1024925486}
+  testPlayer4: {fileID: 106007816}
+  testPlayer5: {fileID: 1469331103}
+  testPlayer6: {fileID: 1870238748}
+  turnCounter: 0
 --- !u!4 &845406947
 Transform:
   m_ObjectHideFlags: 0
@@ -749,8 +800,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1024925487}
   - component: {fileID: 1024925488}
+  - component: {fileID: 1024925489}
   m_Layer: 0
-  m_Name: PersonPrefab (2)
+  m_Name: TestPlayer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,6 +838,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {fileID: 1597735624}
+  isActive: 0
+  uIHandler: {fileID: 0}
+  playerLogic: {fileID: 0}
+--- !u!114 &1024925489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024925486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f095142005b6ca4e83b2c25699a5407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  movesRemaining: 0
+  didMove: 0
+  isActive: 0
 --- !u!1 &1130003540
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,8 +1027,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1469331104}
   - component: {fileID: 1469331105}
+  - component: {fileID: 1469331106}
   m_Layer: 0
-  m_Name: PersonPrefab (4)
+  m_Name: TestPlayer5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -993,6 +1065,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {fileID: 1491426531}
+  isActive: 0
+  uIHandler: {fileID: 0}
+  playerLogic: {fileID: 0}
+--- !u!114 &1469331106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469331103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f095142005b6ca4e83b2c25699a5407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  movesRemaining: 0
+  didMove: 0
+  isActive: 0
 --- !u!1 &1491426530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,8 +1344,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1870238749}
   - component: {fileID: 1870238750}
+  - component: {fileID: 1870238751}
   m_Layer: 0
-  m_Name: PersonPrefab (5)
+  m_Name: TestPlayer6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1290,6 +1382,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {fileID: 1626877326}
+  isActive: 0
+  uIHandler: {fileID: 0}
+  playerLogic: {fileID: 0}
+--- !u!114 &1870238751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870238748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f095142005b6ca4e83b2c25699a5407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  movesRemaining: 0
+  didMove: 0
+  isActive: 0
 --- !u!1 &1937783730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,8 +1411,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1937783731}
   - component: {fileID: 1937783732}
+  - component: {fileID: 1937783733}
   m_Layer: 0
-  m_Name: PersonPrefab (1)
+  m_Name: TestPlayer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1337,6 +1449,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   movePoint: {fileID: 575107859}
+  isActive: 0
+  uIHandler: {fileID: 0}
+  playerLogic: {fileID: 0}
+--- !u!114 &1937783733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937783730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f095142005b6ca4e83b2c25699a5407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  movesRemaining: 0
+  didMove: 0
+  isActive: 0
 --- !u!1 &1993969212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,7 +2409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -267.5, y: 246.5}
+  m_AnchoredPosition: {x: -142.5, y: 171.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101078759

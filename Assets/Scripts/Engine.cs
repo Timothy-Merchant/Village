@@ -6,18 +6,21 @@ using TMPro;
 
 public class Engine : MonoBehaviour
 {
-
+    [SerializeField]
+    public UIHandler uIHandler;
     public List<GameObject> players;
     public GameObject testPlayer1;
+    public Player testPlayer1Logic;
     public GameObject testPlayer2;
     public GameObject testPlayer3;
     public GameObject testPlayer4;
     public GameObject testPlayer5;
     public GameObject testPlayer6;
+    public float turnCounter = 4f;
 
     // Start is called before the first frame update
     void Start()
-    {        
+    {
         Person Rowena = new Person();
         Rowena.first_name = "Rowena";
         Rowena.last_name = "Rowena";
@@ -30,12 +33,27 @@ public class Engine : MonoBehaviour
         players.Add(testPlayer5);
         players.Add(testPlayer6);
 
-        testPlayer1.GetComponent<PersonController>().isActive = true;
+        testPlayer1Logic.isActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        turnCounter = testPlayer1Logic.movesRemaining;
 
+        if (testPlayer1Logic.didMove)
+        {
+            if (testPlayer1Logic.movesRemaining > 1)
+            {
+                testPlayer1Logic.movesRemaining -= 1;
+            }
+            else
+            {
+                testPlayer1Logic.movesRemaining = 0;
+                testPlayer1Logic.isActive = false;                
+            }
+
+            testPlayer1Logic.didMove = false;
+        }
     }
 }

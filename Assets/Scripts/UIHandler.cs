@@ -6,15 +6,17 @@ using TMPro;
 
 public class UIHandler : MonoBehaviour
 {
-    public TextMeshProUGUI turnCounter;
-    public int turns = 4;
+    [SerializeField]
+    public Engine engine;
+    public TextMeshProUGUI turnCounter;    
 
     void Start()
     {
+        
     }
 
     void Update()
     {
-        this.turnCounter.text = turns.ToString();
+        this.turnCounter.text = engine.turnCounter.ToString();
     }
 }
