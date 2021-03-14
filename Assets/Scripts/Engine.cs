@@ -33,14 +33,17 @@ public class Engine : MonoBehaviour
         players.Add(testPlayer5);
         players.Add(testPlayer6);
 
+        // Set initial test player status to active
         testPlayer1Logic.isActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Set UI counter to remaining moves
         turnCounter = testPlayer1Logic.movesRemaining;
 
+        // Deduct from remaining moves on move
         if (testPlayer1Logic.didMove)
         {
             if (testPlayer1Logic.movesRemaining > 1)
@@ -50,7 +53,7 @@ public class Engine : MonoBehaviour
             else
             {
                 testPlayer1Logic.movesRemaining = 0;
-                testPlayer1Logic.isActive = false;                
+                testPlayer1Logic.isActive = false;
             }
 
             testPlayer1Logic.didMove = false;
